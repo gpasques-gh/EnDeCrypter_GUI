@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:controller="EnDeCrypter.Controller" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" hgap="10" vgap="10" alignment="TOP_CENTER">
+    <padding>
+        <Insets top="25" right="25" bottom="10" left="25"/>
+    </padding>
+
+    <Label text="EnDeCrypter - an encryption and decryption tool made in JavaFX">
+        <font>
+            <Font name="System Bold" size="16.0" />
+        </font>
+        GridPane.columnIndex="0"
+        GridPane.rowIndex="0"
+    </Label>
+
+
+    <Button fx:id="one_time_pad" onAction="#changeToOneTimePad" text="One-Time Pad Encryption/Decryption (with user input)"
+            GridPane.halignment="CENTER"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="1"
+    />
+
+    <Button fx:id="one_time_pad_file" onAction="#changeToFileOTP" text="One-Time Pad Encryption/Decryption (with file input)"
+            GridPane.halignment="CENTER"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="2"
+    />
+
+    <Button fx:id="caesar_cipher" onAction="#changeToCaesar" text="Caesar Cipher (ROT) Encryption/Decryption (with user input)"
+            GridPane.halignment="CENTER"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="3"
+    />
+
+
+</GridPane>
